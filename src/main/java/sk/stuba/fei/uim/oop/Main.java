@@ -3,20 +3,19 @@ import sk.stuba.fei.uim.oop.auto.Auto;
 public class Main {
     public static void main(String[] args) {
         Auto skoda = new Auto();
-        Auto bmw = new Auto();
+        Auto vw = new Auto(50);
 
-        skoda.jedna = 1;
-        bmw.jedna = 2;
         skoda.setStavNadrze(100);
         skoda.setKapacitaNadrze(100);
+        System.out.println("skoda");
         System.out.println(skoda.stav());
         skoda.jazdi(100);
         System.out.println(skoda.stav());
 
-        if (skoda.jedna == bmw.jedna) {
-            System.out.println("rovnake");
-        } else {
-            System.out.println("rozne");
-        }
+        System.out.println("vw");
+        System.out.println(vw.stav());
+        vw.jazdi(100);
+        System.out.println(vw.stav());
+
     }
 }
